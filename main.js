@@ -3,7 +3,6 @@
 let printWindowValues = function() {
   console.log(window);
 };
-printWindowValues();
 
 // Задание 2
 
@@ -15,12 +14,13 @@ let expTen = function(value) {
   console.log("exp = ", buffer);
 };
 
-expTen(2);
-
 // Задание 3
 
 let getFuncRes = function (func, arg){
   return func(arg);
-}
+};
 
+// Вызов функций
+printWindowValues();
+expTen(2);
 getFuncRes(console.log, "Hello World");
